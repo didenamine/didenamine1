@@ -1,0 +1,159 @@
+.projects
+{
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: nowrap ;
+  gap: 10px;
+  justify-content: center;
+  min-width: 410px;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+.pro1
+{
+display: grid;
+border-radius: 10px;
+grid-template-columns: 3fr 0.2fr;
+height: 17em;
+cursor: pointer;
+background-color:#9393e1;
+width:23em;
+transition: width 0.3s;
+}
+.pro1:hover{
+width: 40em;
+border-style:solid;
+background-color: #8b8bf1;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 3fr;
+padding: 10px;
+
+}
+.pro1:hover .dry_cleaners_app_desc
+{
+color :white ;
+line-height: 120%;
+visibility: visible;
+font-size: 25px;
+}
+.pro1:hover .dry_cleaners_app
+{
+  font-size: 20px;
+  text-align: center;
+}
+.pro2
+{
+  display: grid;
+  border-radius: 10px;
+  height: 17em;
+  cursor: pointer;
+  background-color:#9393e1;
+  width:23em;
+  transition: width 0.3s;
+}
+.pro2:hover
+{
+  
+border-style:solid;
+  background-color: #8b8bf1;
+  width: 40em;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 3fr;
+padding: 10px;
+
+}
+.pro2:hover .notes_app_desc
+{
+  color :white ;
+  line-height: 120%;
+  font-size: 25px;
+  margin-top: 10px;
+  visibility: visible;
+}
+.pro2:hover .notes_app
+{
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.pro3
+{
+display: grid;
+border-radius: 10px;
+grid-gap: 10px;
+background-color:#9393e1;
+height: 17em;
+cursor: pointer;
+width:23em;
+transition: width 0.3s;
+}
+.pro3:hover
+{
+  width: 40em;
+  background-color: #8b8bf1;
+grid-template-columns: 1fr;
+
+border-style:solid;
+grid-template-rows: 1fr 3fr;
+}
+.pro3:hover .calculator_app_desc
+{
+  color :white;
+  visibility: visible;
+  line-height: 120%;
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+.pro3:hover .calculator_app
+{
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+.pro4
+{
+display: grid;
+border-radius: 10px;
+grid-gap: 10px;
+background-color:#9393e1;
+height: 17em;
+cursor: pointer;
+width:23em;
+transition: width 0.3s;
+}
+.pro4:hover
+{
+width: 40em;
+grid-template-columns: 1fr;
+
+border-style:solid;
+background-color: #8b8bf1;
+grid-template-rows: 1fr 3fr;
+}
+.pro4:hover .goose_game_desc
+{
+  color :white ;
+  line-height: 120%;
+  visibility: visible;
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+  margin: 5px;
+}
+.pro4:hover .goose_game
+{
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media all and (max-width:1505px)
+{
+  .projects
+  {
+    margin-right: 0px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+  }
+}
