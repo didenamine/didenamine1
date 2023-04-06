@@ -1,0 +1,29 @@
+body{
+  background-color: #BFC2ED;
+  margin: 0;
+  margin-bottom: 1000px;
+  align-self: center;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+html{
+  text-decoration: none ; 
+  scroll-behavior:smooth;
+  --scrollbarBG: ;
+  --thumbBG: #96b9ca;
+}
+body::-webkit-scrollbar {
+  width: 20px;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius:5px;
+  border: 2px solid var(--scrollbarBG);
+}
