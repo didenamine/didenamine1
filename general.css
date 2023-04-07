@@ -1,0 +1,52 @@
+body{
+  background-color: #BFC2ED;
+  margin: 0;
+  margin-bottom: 60px;
+  align-self: center;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  background-image: url(back.png);
+  background-repeat: no-repeat; 
+  background-size:cover ;
+  background-position: center;
+
+  scroll-behavior:smooth;  
+}
+
+html,body{
+   
+  scroll-behavior:smooth;
+  text-decoration: none ;
+  --scrollbarBG: ;
+  --thumbBG: #96b9ca;
+}
+body::-webkit-scrollbar {
+  width: 20px;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius:5px;
+  border: 2px solid var(--scrollbarBG);
+}
+@keyframes ghosty {
+
+  0%{margin-left:1500px;}
+  30%{margin-right: 1000px;}
+  50%{margin-bottom:300px ;}
+  70%{transform: scaleX(-1);}
+  90%{transition: scaleY(-1);}
+  100%{margin-top: 300px;}
+}
+.ghost{
+  position: fixed;
+  margin-top: -550px;
+  margin-left: 0px;
+  animation: ghosty 7s linear 2s infinite alternate;
+}

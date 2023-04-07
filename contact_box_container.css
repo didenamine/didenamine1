@@ -1,0 +1,101 @@
+.contact_box_container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 200px;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact_inputs{
+    height: 60px;
+    width: 650px;
+    font-size: 20px;   
+    border-radius: 10px;
+    border: 5px black solid;
+    border-style:groove;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+#contact_txterea{
+    border-radius: 10px;
+    max-width: 650px;
+    min-width: 650px;
+    max-height: 100px;
+    min-height: 100px;
+    font-size: 15px;
+    border: 2px black solid;
+    border-top: none;
+    border-right: none;
+}
+
+#t1{
+    padding-left: 100px;
+    color: rgb(108, 5, 131);
+}
+#t2{
+    padding-left: 100px;
+    
+    color: rgb(108, 5, 131);
+}
+#t3{
+    padding-left: 100px;
+    
+    color: rgb(108, 5, 131);
+}
+#sub_btn{
+    background-color: rgb(118, 16, 208);
+    width: 400px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.mailmeat{
+    display: flex;
+    flex-direction: column;
+    gap:-50px;
+    
+    
+}
+.contact_logos{
+    display: grid;
+    
+}
+.facebook,.insta,.linkedin,.git{
+    height: 60px;
+}
+
+@keyframes point {
+    0%   {margin-left: 320px;}
+    100% {margin-left: 300px; }
+  }
+.pointer{
+    height: 60px;
+    margin-top: -100px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    animation: point 1s linear 2s infinite alternate;
+}
+input:not(:placeholder-shown)
+{
+    border-bottom-color:rgb(0, 255, 0) ;
+}
+input:placeholder-shown
+{
+    border-bottom-color:red;
+}
+.contact_txterea:not(:placeholder-shown)
+{
+    border-bottom-color:rgb(0, 255, 0) ;
+
+}
+
+.contact_txterea:placeholder-shown
+{
+    border-bottom-color:red ;
+
+}
